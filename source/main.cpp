@@ -25,11 +25,13 @@ int main()
 	tte_init_con();
 
 	// Printf something at 96,72
-	tte_printf("#{P:96,72}Hello World!");
-
-	while(1)
+	
+	int value = 180 * 60; //180 seconds * 60 frames
+	while(value > 0)
 	{
+		tte_printf("#{es;P:180,0}Timer = %d", value/60);
 		VBlankIntrWait();
+		value--;
 	}
 
 	return 0;
