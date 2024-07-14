@@ -1,5 +1,4 @@
-main.o: \
- C:/devkitPro/libtonc-examples/libtonc-examples-master/lab/template/source/main.c \
+main.o: C:/MyButanoGames/ProjectFoodTruck/source/main.c \
  C:/devkitPro/libtonc/include/tonc.h \
  C:/devkitPro/libtonc/include/tonc_types.h \
  C:/devkitPro/libtonc/include/tonc_memmap.h \
