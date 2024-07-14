@@ -1,4 +1,4 @@
-main.o: C:/MyButanoGames/ProjectFoodTruck/source/main.c \
+main.o: C:/MyButanoGames/ProjectFoodTruck/source/main.cpp \
  C:/devkitPro/libtonc/include/tonc.h \
  C:/devkitPro/libtonc/include/tonc_types.h \
  C:/devkitPro/libtonc/include/tonc_memmap.h \

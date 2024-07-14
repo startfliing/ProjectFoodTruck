@@ -1554,26 +1554,26 @@ Linker script and memory map
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x394
+.debug_info     0x00000000      0x399
  *(.debug_info)
- .debug_info    0x00000000      0x394 main.o
+ .debug_info    0x00000000      0x399 main.o
 
-.debug_abbrev   0x00000000      0x1c2
+.debug_abbrev   0x00000000      0x1b9
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x1c2 main.o
+ .debug_abbrev  0x00000000      0x1b9 main.o
 
-.debug_line     0x00000000      0x12f
+.debug_line     0x00000000      0x155
  *(.debug_line)
- .debug_line    0x00000000      0x12f main.o
+ .debug_line    0x00000000      0x155 main.o
 
 .debug_frame    0x00000000       0x28
  *(.debug_frame)
  .debug_frame   0x00000000       0x28 main.o
 
-.debug_str      0x00000000      0x276
+.debug_str      0x00000000      0x2a6
  *(.debug_str)
- .debug_str     0x00000000      0x276 main.o
-                                0x2af (size before relaxing)
+ .debug_str     0x00000000      0x2a6 main.o
+                                0x2df (size before relaxing)
 
 .debug_loc
  *(.debug_loc)
@@ -1820,6 +1820,8 @@ LOAD C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/13.2.0/thumb/crtbegin.o
 LOAD main.o
 LOAD C:/devkitPro/libgba/lib\libmm.a
 LOAD C:/devkitPro/libtonc/lib\libtonc.a
+LOAD C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb\libstdc++.a
+LOAD C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb\libm.a
 START GROUP
 LOAD C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/13.2.0/thumb\libgcc.a
 LOAD C:/devkitPro/devkitARM/bin/../lib/gcc/arm-none-eabi/13.2.0/../../../../arm-none-eabi/lib/thumb\libg.a
