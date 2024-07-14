@@ -23,12 +23,11 @@ int main()
 
 	// Initialize use of stdio.
 	tte_init_con();
-
-	// Printf something at 96,72
 	
 	int value = 180 * 60; //180 seconds * 60 frames
 	while(value > 0)
 	{
+					// \/\/ these characters affect how print operates (i.e. 'es' allowed old text to be erased)
 		tte_printf("#{es;P:180,0}Timer = %d", value/60);
 		VBlankIntrWait();
 		value--;
