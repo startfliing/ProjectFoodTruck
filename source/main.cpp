@@ -2,15 +2,7 @@
 #include <stdio.h>
 #include <tonc.h>
 
-int main()
-{
-	// Init interrupts and VBlank irq.
-	irq_init(NULL);
-	irq_add(II_VBLANK, NULL);
-
-	// Video mode 0, enable bg 0.
-	REG_DISPCNT= DCNT_MODE0 | DCNT_BG0;
-
+void init_text(){
 	// Init 4bpp vwf text on bg 0.
 	tte_init_chr4c(0, 			// BG 0
 		BG_CBB(0)|BG_SBB(31),	// Charblock 0; screenblock 31
@@ -23,6 +15,18 @@ int main()
 
 	// Initialize use of stdio.
 	tte_init_con();
+}
+
+int main()
+{
+	// Init interrupts and VBlank irq.
+	irq_init(NULL);
+	irq_add(II_VBLANK, NULL);
+
+	// Video mode 0, enable bg 0.
+	REG_DISPCNT= DCNT_MODE0 | DCNT_BG0 | DCNT_BG1;
+
+	init_text();
 	
 	int value = 180 * 60; //180 seconds * 60 frames
 	while(value > 0)
