@@ -17,6 +17,7 @@ class InGameState;
 class GameState{
     public:
         GameState(){};
+        ~GameState(){};
         virtual GameState* run() = 0;
 };
 

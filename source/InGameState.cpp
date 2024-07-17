@@ -55,6 +55,12 @@ GameState* InGameState::run(){
 		if(value % 60 == 0){ // the chars in #{} affect how print operates (i.e. 'es' allowed old text to be erased)
 			tte_printf("#{es;P:180,0}Timer = %d", value/60);
 		}
+
+
+		if(key_hit(KEY_B)){
+			//start battle;
+			//make sure it returns back here;
+		}
 		VBlankIntrWait();
         key_poll();
 		value--;
