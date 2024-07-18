@@ -2,6 +2,7 @@ MenuState.o: C:/MyButanoGames/ProjectFoodTruck/source/MenuState.cpp \
  C:/MyButanoGames/ProjectFoodTruck/include/MenuState.hpp \
  C:/MyButanoGames/ProjectFoodTruck/include/GameState.hpp \
  C:/MyButanoGames/ProjectFoodTruck/include/InGameState.hpp \
+ C:/MyButanoGames/ProjectFoodTruck/include/IntroState.hpp \
  C:/devkitPro/libtonc/include/tonc.h \
  C:/devkitPro/libtonc/include/tonc_types.h \
  C:/devkitPro/libtonc/include/tonc_memmap.h \
@@ -21,6 +22,7 @@ MenuState.o: C:/MyButanoGames/ProjectFoodTruck/source/MenuState.cpp \
 C:/MyButanoGames/ProjectFoodTruck/include/MenuState.hpp:
 C:/MyButanoGames/ProjectFoodTruck/include/GameState.hpp:
 C:/MyButanoGames/ProjectFoodTruck/include/InGameState.hpp:
+C:/MyButanoGames/ProjectFoodTruck/include/IntroState.hpp:
 C:/devkitPro/libtonc/include/tonc.h:
 C:/devkitPro/libtonc/include/tonc_types.h:
 C:/devkitPro/libtonc/include/tonc_memmap.h:

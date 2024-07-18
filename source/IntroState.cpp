@@ -1,6 +1,5 @@
-#include "MenuState.hpp"
-#include "InGameState.hpp"
 #include "IntroState.hpp"
+#include "MenuState.hpp"
 
 #include <tonc.h>
 #include <stdio.h>
@@ -8,32 +7,29 @@
 
 extern int init_text();
 
-MenuState::MenuState(){
+IntroState::IntroState(){
 
 }
 
 
 //Important thing to consider:
 //What are the endpoints from being InGame?
-GameState* MenuState::run(){
+GameState* IntroState::run(){
     REG_DISPCNT= DCNT_MODE0 | DCNT_BG0 | DCNT_BG1;
 
 	init_text();
     int value = 0;
-    int cursor = 0;
-    while(!key_hit(KEY_A)){
+    int timer = 11;
+    while(!key_hit(KEY_START) && timer > -1){
         if(value % 60 == 0){ // the chars in #{} affect how print operates (i.e. 'es' allowed old text to be erased
-			tte_printf("#{es;P:%d,%d}Menu", cursor, cursor);
-            cursor++;
+			timer--;
+            tte_printf("#{es;P:120,70}Intro duration left = %d", timer);
             value = 0;
 		}
         value++;
-        if(cursor == 15){
-            return new IntroState();
-        }
         key_poll();
         VBlankIntrWait();
     }
-
-    return new InGameState();
+    //fade to black
+    return new MenuState();
 }

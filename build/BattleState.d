@@ -1,4 +1,4 @@
-InGameState.o: C:/MyButanoGames/ProjectFoodTruck/source/InGameState.cpp \
+BattleState.o: C:/MyButanoGames/ProjectFoodTruck/source/BattleState.cpp \
  C:/devkitPro/libtonc/include/tonc.h \
  C:/devkitPro/libtonc/include/tonc_types.h \
  C:/devkitPro/libtonc/include/tonc_memmap.h \
@@ -17,7 +17,6 @@ InGameState.o: C:/MyButanoGames/ProjectFoodTruck/source/InGameState.cpp \
  C:/devkitPro/libtonc/include/tonc_tte.h \
  C:/MyButanoGames/ProjectFoodTruck/include/InGameState.hpp \
  C:/MyButanoGames/ProjectFoodTruck/include/GameState.hpp \
- C:/MyButanoGames/ProjectFoodTruck/include/MenuState.hpp \
  C:/MyButanoGames/ProjectFoodTruck/include/BattleState.hpp
 C:/devkitPro/libtonc/include/tonc.h:
 C:/devkitPro/libtonc/include/tonc_types.h:
@@ -37,5 +36,4 @@ C:/devkitPro/libtonc/include/tonc_text.h:
 C:/devkitPro/libtonc/include/tonc_tte.h:
 C:/MyButanoGames/ProjectFoodTruck/include/InGameState.hpp:
 C:/MyButanoGames/ProjectFoodTruck/include/GameState.hpp:
-C:/MyButanoGames/ProjectFoodTruck/include/MenuState.hpp:
 C:/MyButanoGames/ProjectFoodTruck/include/BattleState.hpp:

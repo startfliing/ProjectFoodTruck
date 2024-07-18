@@ -2,7 +2,7 @@
 #include <tonc.h>
 #include <tonc_tte.h>
 
-#include "MenuState.hpp"
+#include "IntroState.hpp"
 
 int main()
 {
@@ -10,10 +10,11 @@ int main()
 	irq_init(NULL);
 	irq_add(II_VBLANK, NULL);
 
-	GameState* gs = new MenuState();
+	GameState* gs = new IntroState();
 	while(1){
 		GameState* temp = gs->run();
 		gs = temp;
+		key_poll();
 	}
 
 	return 0;

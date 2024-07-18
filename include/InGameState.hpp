@@ -7,6 +7,8 @@ class InGameState : public GameState{
     public:
         InGameState();
         GameState* run();
+    private:
+        int x, y;
 };
 
 #endif
