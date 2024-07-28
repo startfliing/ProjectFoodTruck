@@ -38,8 +38,6 @@ InGameState::InGameState(){
 	x = 70, y = 70;
 }
 
-
-
 //Important thing to consider:
 //What are the endpoints from being InGame?
 GameState* InGameState::run(){
