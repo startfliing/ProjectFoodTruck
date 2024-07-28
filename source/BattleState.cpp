@@ -53,7 +53,6 @@ GameState* BattleState::run(){
 			saveSaveData(sd);
 		}
 		
-
 		if(key_hit(KEY_SELECT)){
 			sd.x = sd.y = 0;
 			resetSaveData();
