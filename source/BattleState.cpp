@@ -58,7 +58,6 @@ GameState* BattleState::run(){
 			resetSaveData();
 		}
 
-
 		VBlankIntrWait();
 	}
 
